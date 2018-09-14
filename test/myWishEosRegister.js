@@ -22,8 +22,7 @@ contract('MyWishEosRegister', function (accounts) {
     });
 
     it('#1 construct', async () => {
-        const lastWill = await MyWishEosRegister.new(TARGET, [TARGET], [100], 2 * MINUTE, 0, 0);
-        lastWill.address.should.have.length(42);
+        const register = await MyWishEosRegister.new();
     });
 
 });
